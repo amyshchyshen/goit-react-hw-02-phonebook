@@ -81,14 +81,17 @@ class App extends Component {
   render() {
     const { contacts, filter } = this.state;
     const filteredContacts = this.filterContacts(contacts, filter);
-
+    console.log(contacts.length);
     return (
       <div className={styles.wrapper}>
         <h1 className={styles.heading}>Phonebook</h1>
+
         <ContactForm handleAddContact={this.addContact} />
 
         <h2 className={styles.heading}>Contacts</h2>
-        <Filter value={filter} handleChangeFilter={this.changeFilter} />
+        {contacts.length > 1 && (
+          <Filter value={filter} handleChangeFilter={this.changeFilter} />
+        )}
         <ContactList
           contacts={filteredContacts}
           handleDeleteContact={this.deleteContact}

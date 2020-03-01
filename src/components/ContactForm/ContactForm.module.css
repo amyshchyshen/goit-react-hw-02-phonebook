@@ -19,7 +19,7 @@
 
 .input {
   padding: 10px 15px;
-  border: 1px solid #00008b;
+  border: 1px solid #0ada0af1;
   border-radius: 5px;
 }
 
@@ -28,7 +28,7 @@
   font-size: 18px;
   font-weight: 600;
   color: #fff;
-  background-color: #4682b4;
+  background-color: #38e921;
   border: none;
   border-radius: 5px;
   box-shadow: primary-box-shadow;
